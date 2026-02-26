@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vayronix (VRNX) | Futuristic AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --neon: #00f2ff; --purple: #7000ff; }
+        body { background: #020205; color: #fff; font-family: 'Orbitron', sans-serif; overflow-x: hidden; }
+        .cyber-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, transparent, #020205),
+                        linear-gradient(rgba(0, 242, 255, 0.1) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(0, 242, 255, 0.1) 1px, transparent 1px);
+            background-size: 100% 100%, 50px 50px, 50px 50px;
+            z-index: -1; transform: perspective(500px) rotateX(60deg);
+            animation: gridMove 5s linear infinite;
+        }
+        @keyframes gridMove { from { background-position: 0 0; } to { background-position: 0 50px; } }
+        .neon-glow { text-shadow: 0 0 10px var(--neon), 0 0 20px var(--neon); color: var(--neon); }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(0, 242, 255, 0.2); }
+    </style>
+</head>
+<body>
+    <div class="cyber-bg"></div>
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto relative z-10">
+        <h1 class="font-bold text-2xl tracking-widest neon-glow">VAYRONIX</h1>
+        <button class="border border-cyan-400 px-6 py-2 text-xs font-bold hover:bg-cyan-400 hover:text-black transition">INITIATE_AUTH</button>
+    </nav>
+    <main class="relative z-10 text-center pt-32 pb-20 px-4">
+        <h2 class="text-6xl md:text-8xl font-bold mb-8 uppercase leading-none">Neural <br> <span class="neon-glow text-white">Evolution</span></h2>
+        <p class="max-w-2xl mx-auto text-cyan-100/60 text-sm tracking-widest mb-12">Built for the Solana ecosystem. Powered by Babul Kaur ji's neural vision.</p>
+        <div class="flex flex-col md:row justify-center gap-6">
+            <button class="bg-white text-black px-10 py-4 text-sm font-bold hover:bg-cyan-400 transition">DEPLOY VRNX</button>
+        </div>
+    </main>
+    <footer class="py-12 text-center relative z-10 opacity-40">
+        <p class="text-[10px] tracking-[0.8em] uppercase">© 2026 Vayronix Network // Created by Babul Kaur ji</p>
+    </footer>
+</body>
+</html>
